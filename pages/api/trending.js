@@ -1,8 +1,6 @@
-import { API_BASE, API_KEY } from '../../lib/tmdb'
-
 
 export default async (req, res) => {
-    const result = await fetch(`${API_BASE}/trending/movie/week?api_key=${API_KEY}&language=en-US`)
+    const result = await fetch(`${NEXT_PUBLIC_API_BASE}/trending/movie/week?api_key=${process.env.API_KEY}&language=en-US`)
     const json = await result.json()
 
     res.status(200).json({
