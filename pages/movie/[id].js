@@ -12,11 +12,7 @@ export default function MovieDetail({ info }) {
       </Head>
       <div className={styles.detailMovie}>
         <div className={styles.imageDetail}>
-
-        setImageBroken(info.backdrop_path)
-
-        <img src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} width="1000"  />
-        
+          <img src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} width="1000" />
         </div>
 
         <div className={styles.description}>
