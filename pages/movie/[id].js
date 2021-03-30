@@ -20,6 +20,12 @@ export default function MovieDetail({ info }) {
           <div className={styles.circle}>
             <h2>{info.vote_average}</h2>
           </div>
+          <h2> <a href={`${info.homepage}`} target="_blank">See more</a> </h2>
+          <small>Poularity: </small>
+          <h2>{info.popularity}</h2>
+          <h2>{info.runtime} min</h2>
+          <small>Genre: </small>
+          <h2>{info.genres[0].name}</h2>
           <small>Release date</small>
           <h2>{info.release_date}</h2>
           <small>Description</small>
