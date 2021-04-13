@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.scss'
 
-
 export default function MovieDetail({ info }) {
 
   return (
@@ -14,7 +13,6 @@ export default function MovieDetail({ info }) {
         <div className={styles.imageDetail}>
           <img src={`https://image.tmdb.org/t/p/original${info.backdrop_path}`} width="1000" />
         </div>
-
         <div className={styles.description}>
           <h1>{info.title}</h1>
           <div className={styles.circle}>
@@ -46,4 +44,6 @@ export async function getServerSideProps(context) {
     }
   }
 }
+
+
 
